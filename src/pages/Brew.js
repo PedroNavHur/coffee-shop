@@ -22,6 +22,10 @@ const BrewContainer = styled.div`
   height: calc(100vh - 165.2px);
   width: 100%;
   background-color: ${colors.VerveBeige};
+
+  @media (max-width: 768px) {
+    height: max-content;
+  }
 `;
 
 const Title = styled.h2`
@@ -31,6 +35,10 @@ const Title = styled.h2`
   line-height: 1.3;
   letter-spacing: 0.06em;
   text-align: center;
+
+  @media (max-width: 768px) {
+    font-size: 22px;
+  }
 `;
 
 const OptionsContainer = styled.div`
@@ -38,6 +46,19 @@ const OptionsContainer = styled.div`
   justify-content: center;
   align-items: flex-end;
   position: relative;
+
+  @media (max-width: 768px) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+    margin: 20px 0;
+
+    // Ultimo que quede en el medio
+    & > :last-child {
+      grid-column: span 2;
+      justify-self: center;
+    }
+  }
 `;
 
 const Option = styled.div`
@@ -48,6 +69,7 @@ const Option = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
   margin: 10px;
   margin-bottom: ${(props) => props.offset}px;
   bottom: 0;
@@ -63,6 +85,26 @@ const Option = styled.div`
   &:hover {
     background-color: ${props => props.bgColor};
   }
+
+  svg {
+    width: 80px;
+    height: 80px;
+
+    @media (max-width: 768px) {
+      width: 48px;
+      height: 48px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    width: 159px;
+    height: 130px;
+
+    margin: 5px;
+    margin-bottom: 0;
+    transform: none;
+    padding: 0;
+  }
 `;
 
 const NavControls = styled.div`
@@ -70,6 +112,11 @@ const NavControls = styled.div`
   justify-content: space-between;
   width: 100%;
   max-width: calc(100% - 240px);
+
+  @media (max-width: 768px) {
+    max-width: calc(100% - 48px);
+    margin-bottom: 20px;
+  }
 `;
 
 
@@ -81,6 +128,10 @@ const P3 = styled.p`
   text-align: center;
   margin: 10px 0 0 0;
   color: ${colors.VerveBlack};
+
+  @media (max-width: 768px) {
+    font-size: 14px;
+  }  
 `;
 
 const options = [
@@ -137,7 +188,7 @@ const Brew = () => {
             selected={selectedOption}
             onClick={() => handleOptionClick(label)}
           >
-            <Icon width={80} height={80} />
+            <Icon />
             <P3>{label}</P3>
           </Option>
         ))}
