@@ -1,10 +1,13 @@
 import React from 'react';
 import styled from 'styled-components';
+import { useNavigate } from "react-router-dom";
+
 import colors from '../styles/styles';
 
 import Steps from '../components/Steps';
 import { NavButton } from '../components/Buttons';
 import Product from '../components/Product';
+
 
 const ResultsContainer = styled.div`
   display: flex;
@@ -56,6 +59,13 @@ const steps = [
 ];
 
 const Results = () => {
+  const navigate = useNavigate();
+
+  // Send back to start on Retake Quiz
+  const handleRetake = () => {
+    navigate('/');
+  };
+
   return (
     <ResultsContainer>
       <Steps steps={steps} />
@@ -65,7 +75,7 @@ const Results = () => {
       </Subtitle>
       <ButtonsContainer>
         <NavButton>Email my results</NavButton>
-        <NavButton>Retake the quiz</NavButton>
+        <NavButton onClick={handleRetake}>Retake the quiz</NavButton>
       </ButtonsContainer>
       <Product/>
     </ResultsContainer>

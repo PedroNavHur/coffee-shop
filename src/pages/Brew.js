@@ -51,7 +51,7 @@ const Option = styled.div`
   margin: 10px;
   margin-bottom: ${(props) => props.offset}px;
   bottom: 0;
-  background-color: ${props => ((props.selected === null || props.selected === props.label) ? props.bgColor : '#ddd')};
+  background-color: ${props => ((props.selected === null || props.selected === props.label) ? props.bgColor : colors.VerveDarkBeige)};
   border-radius: 2px;
   text-align: center;
   color: #000;
@@ -117,6 +117,11 @@ const Brew = () => {
     navigate("/results");
   };
 
+  // Navigate back to home page
+  const handleBackClick = () => {
+    navigate("/");
+  };
+
   return (
     <BrewContainer>
       <Steps steps={steps} />
@@ -139,7 +144,7 @@ const Brew = () => {
       </OptionsContainer>
       <ContinueButton $visible={selectedOption} onClick={handleContinueClick}>CONTINUE</ContinueButton>
       <NavControls>
-        <NavButton>
+        <NavButton onClick={handleBackClick}>
           <BackArrow />
           &nbsp; Back
         </NavButton>

@@ -18,6 +18,7 @@ const TransitionContainer = styled.div`
 
 const IconContainer = styled.div`
   font-size: 80px;
+  margin-top: 120px;
 `;
 
 const Message = styled.div`
@@ -28,6 +29,7 @@ const Message = styled.div`
   text-align: center;
   letter-spacing: 0.84px;
   color: ${colors.VerveBlack};
+  margin-bottom: 120px;
 `;
 
 const Transition = () => {
