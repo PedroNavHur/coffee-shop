@@ -21,7 +21,8 @@ const NavLogo = styled.a`
   font-family: 'Roboto Condensed', sans-serif;
   font-weight: 700;
   font-size: 32px;
-  line-height: 48px;
+  line-height: 1.5;
+  letter-spacing: 0;
   text-decoration: none;
   text-align: center;
   color: white;

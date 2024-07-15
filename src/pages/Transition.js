@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { useNavigate } from "react-router-dom";
 import { ReactComponent as BaristaIcon } from "../assets/icons/pretty-much-a-barista-desktop.svg"
+import { ContinueButton } from "../components/Buttons";
 import colors from "../styles/styles";
 
 const TransitionContainer = styled.div`
@@ -29,26 +30,6 @@ const Message = styled.div`
   color: ${colors.VerveBlack};
 `;
 
-const ContinueButton = styled.button`
-  background-color: ${colors.VerveBlack};
-  color: ${colors.White};
-  border: none;
-  padding: 12px 15px 10px 15px;
-  border-radius: 2.55px;
-  cursor: pointer;
-
-  font-family: 'Roboto Condensed', sans-serif;
-  font-weight: 700;
-  font-size: 13px;
-  line-height: 18.2px;
-  text-align: center;
-  letter-spacing: 2.86px;
-
-  &:hover {
-    background-color: #333;
-  }
-`;
-
 const Transition = () => {
   const navigate = useNavigate();
 
@@ -64,7 +45,7 @@ const Transition = () => {
       <Message>
         We'll find coffee that's on your level.
       </Message>
-      <ContinueButton onClick={handleContinue}>
+      <ContinueButton $visible={true} onClick={handleContinue}>
         CONTINUE
       </ContinueButton>
     </TransitionContainer>
