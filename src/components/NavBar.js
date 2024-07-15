@@ -7,6 +7,10 @@ const Nav = styled.nav`
   color: white;
   width: 100%;
   height: 165.2px;
+
+  @media (max-width: 768px) {
+    height: 155px;
+  }
 `;
 
 const NavContainer = styled.div`
@@ -15,6 +19,10 @@ const NavContainer = styled.div`
   align-items: center;
   height: 100%;
   padding: 0 63.5px;
+
+  @media (max-width: 768px) {
+    padding: 0 38px;
+  }
 `;
 
 const NavLogo = styled.a`
@@ -26,10 +34,19 @@ const NavLogo = styled.a`
   text-decoration: none;
   text-align: center;
   color: white;
+
+  @media (max-width: 768px) {
+    font-size: 24px;
+    text-align: left;
+  }
 `;
 
 const Placeholder = styled.div`
   width: 46px;
+
+  @media (max-width: 768px) {
+    display: none;
+  }
 `;
 
 const MenuIcon = styled.div`
@@ -38,6 +55,10 @@ const MenuIcon = styled.div`
   justify-content: space-between;
   height: 27px;
   cursor: pointer;
+
+  @media (max-width: 768px) {
+    height: 22px;
+  }
 `;
 
 const Bar = styled.div`
@@ -45,6 +66,10 @@ const Bar = styled.div`
   height: 3px;
   border-radius: 3px;
   background-color: white;
+
+  @media (max-width: 768px) {
+    width: 32px;
+  }
 `;
 
 const NavBar = () => {

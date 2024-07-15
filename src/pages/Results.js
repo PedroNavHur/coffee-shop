@@ -8,7 +8,6 @@ import Steps from '../components/Steps';
 import { NavButton } from '../components/Buttons';
 import Product from '../components/Product';
 
-
 const ResultsContainer = styled.div`
   display: flex;
   flex-direction: column;
