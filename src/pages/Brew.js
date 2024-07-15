@@ -22,8 +22,10 @@ const BrewContainer = styled.div`
   height: calc(100vh - 165.2px);
   width: 100%;
   background-color: ${colors.VerveBeige};
+  padding: 34x 0;
 
   @media (max-width: 768px) {
+    padding: 26px 0;
     height: max-content;
   }
 `;

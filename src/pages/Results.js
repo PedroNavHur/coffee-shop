@@ -14,7 +14,11 @@ const ResultsContainer = styled.div`
   align-items: center;
   width: 100%;
   background-color: ${colors.VerveBeige};
-  padding: 40px 0;
+  padding: 34x 0;
+
+  @media (max-width: 768px) {
+    padding: 26px 0;
+  }
 `;
 
 const Title = styled.h1`
