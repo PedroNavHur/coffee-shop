@@ -25,6 +25,11 @@ const ContinueButton = styled.button`
   @media (max-width: 768px) {
     width: 100%;
     border-radius: 0;
+    position: fixed;
+    bottom: 20px;
+    right: 50%;
+    transform: translateX(50%);
+    z-index: 1000;
   }
 `;
 
