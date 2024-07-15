@@ -14,6 +14,10 @@ const TransitionContainer = styled.div`
   width: 100%;
   background-color: ${colors.BronsonGreen};
   text-align: center;
+
+  @media (max-width: 768px) {
+    height: calc(100vh - 155px);
+  }
 `;
 
 const IconContainer = styled.div`
@@ -25,11 +29,15 @@ const Message = styled.div`
   font-family: 'Roboto', sans-serif;
   weight: 400;
   font-size: 28px;
-  line-height: 36.4px;
+  line-height: 1.4;
   text-align: center;
-  letter-spacing: 0.84px;
+  letter-spacing: 0.02em;
   color: ${colors.VerveBlack};
   margin-bottom: 120px;
+
+  @media (max-width: 768px) {
+    font-size: 16px;
+  }  
 `;
 
 const Transition = () => {

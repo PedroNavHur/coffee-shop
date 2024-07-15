@@ -21,6 +21,11 @@ const ContinueButton = styled.button`
   &:hover {
     background-color: #333;
   }
+
+  @media (max-width: 768px) {
+    width: 100%;
+    border-radius: 0;
+  }
 `;
 
 const NavButton = styled.button`
