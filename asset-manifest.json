@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/coffee-shop/static/css/main.0fd974b8.css",
-    "main.js": "/coffee-shop/static/js/main.37accf83.js",
+    "main.js": "/coffee-shop/static/js/main.442ec9bc.js",
     "static/js/453.80da4541.chunk.js": "/coffee-shop/static/js/453.80da4541.chunk.js",
     "static/media/product.png": "/coffee-shop/static/media/product.c1a6e655a0d146d81b81.png",
     "static/media/sipping-style.svg": "/coffee-shop/static/media/sipping-style.14734316006e7e737b7f029354873067.svg",
@@ -18,11 +18,11 @@
     "static/media/tasting-notes.svg": "/coffee-shop/static/media/tasting-notes.4bd59e011365aa4d8357475a7de26a0a.svg",
     "static/media/back-icon.svg": "/coffee-shop/static/media/back-icon.dfa893217559a7f29cc18a8f5996f34b.svg",
     "main.0fd974b8.css.map": "/coffee-shop/static/css/main.0fd974b8.css.map",
-    "main.37accf83.js.map": "/coffee-shop/static/js/main.37accf83.js.map",
+    "main.442ec9bc.js.map": "/coffee-shop/static/js/main.442ec9bc.js.map",
     "453.80da4541.chunk.js.map": "/coffee-shop/static/js/453.80da4541.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.0fd974b8.css",
-    "static/js/main.37accf83.js"
+    "static/js/main.442ec9bc.js"
   ]
 }
