@@ -1,4 +1,3 @@
-import React from 'react';
 import styled from 'styled-components';
 import colors from '../styles/styles';
 
@@ -23,7 +22,6 @@ const ContinueButton = styled.button`
     background-color: #333;
   }
 `;
-
 
 const NavButton = styled.button`
   font-family: 'Roboto', sans-serif;
