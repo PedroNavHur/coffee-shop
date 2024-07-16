@@ -17,12 +17,12 @@ import { ReactComponent as BackArrow } from "../assets/icons/back-icon.svg"
 const BrewContainer = styled.div`
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  height: calc(100vh - 165.2px);
+  height: calc(100vh - 233.2px);
   width: 100%;
   background-color: ${colors.VerveBeige};
-  padding: 34x 0;
+  padding: 34px;
 
   @media (max-width: 768px) {
     padding: 26px 0;

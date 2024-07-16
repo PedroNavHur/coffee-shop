@@ -14,7 +14,7 @@ const ResultsContainer = styled.div`
   align-items: center;
   width: 100%;
   background-color: ${colors.VerveBeige};
-  padding: 34x 0;
+  padding: 34px;
 
   @media (max-width: 768px) {
     padding: 26px 0;

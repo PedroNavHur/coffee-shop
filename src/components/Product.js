@@ -56,6 +56,7 @@ const ProductContainer = styled.div`
   justify-content: center;
   width: 1200px;
   background-color: rgba(34, 34, 34, 0.05);
+  margin-bottom: 60px;
 
   @media (max-width: 768px) {
     flex-direction: column;
@@ -158,11 +159,15 @@ const Detail = styled.div`
 
 const DetailContent = styled.div`
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   padding: 0;
   margin: 0;
+
+  @media (max-width: 768px) {
+    flex-direction: row;
+  }
 `;
 
 const DetailTitle = styled.h4`
