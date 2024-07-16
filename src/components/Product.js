@@ -11,6 +11,8 @@ import HorizontalImage from '../assets/banners/horizontal.png';
 import VerticalImage from '../assets/banners/vertical.png';
 import LongVerticalImage from '../assets/banners/long-vertical.png';
 
+// Product Component to display Best Match and Product Details
+
 const DesktopHorizontalBar = styled.img`
   width: 812px;
   height: 2px;

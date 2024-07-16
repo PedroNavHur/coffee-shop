@@ -1,6 +1,8 @@
 import styled from 'styled-components';
 import colors from '../styles/styles';
 
+// ContinueButton component, equal to primary black from figma
+
 const ContinueButton = styled.button`
   background-color: ${colors.VerveBlack};
   color: ${colors.White};
@@ -33,6 +35,7 @@ const ContinueButton = styled.button`
   }
 `;
 
+// NavButton component, equal to navigation button from figma
 const NavButton = styled.button`
   font-family: 'Roboto', sans-serif;
   background: none;

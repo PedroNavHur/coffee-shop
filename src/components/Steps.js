@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import colors from '../styles/styles';
 
+// Steps component and css
 const StepsContainer = styled.div`
   display: flex;
   justify-content: center;
@@ -49,6 +50,8 @@ const Step = styled.div`
   }
 `;
 
+// Takes a list of steps, their state and renders them
+// States are the possible states as in the figma design
 const Steps = ({ steps }) => {
   return (
     <StepsContainer>

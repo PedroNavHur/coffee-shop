@@ -2,6 +2,8 @@ import React from 'react';
 import styled from 'styled-components';
 import colors from '../styles/styles';
 
+// Navbar components and css
+
 const Nav = styled.nav`
   background-color: ${colors.VerveBlack};
   color: white;

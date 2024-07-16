@@ -3,11 +3,13 @@ import {HashRouter as Router, Route, Routes} from 'react-router-dom';
 
 import Layout from '../layouts/Layout';
 
-import Landing from '../pages/Landing';
+// import Landing from '../pages/Landing';
 import Journey from '../pages/Journey';
 import Transition from '../pages/Transition';
 import Brew from '../pages/Brew';
 import Results from '../pages/Results';
+
+// Router for navigation
 
 const AppRoutes = () => {
   return (

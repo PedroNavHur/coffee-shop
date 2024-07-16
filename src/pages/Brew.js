@@ -14,6 +14,8 @@ import { ReactComponent as PodsIcon } from "../assets/icons/pods-desktop.svg"
 import { ReactComponent as MokaPotIcon } from "../assets/icons/moka-pot-desktop.svg"
 import { ReactComponent as BackArrow } from "../assets/icons/back-icon.svg"
 
+// Q2 and Q2Active pages
+
 const BrewContainer = styled.div`
   display: flex;
   flex-direction: column;
@@ -146,6 +148,7 @@ const options = [
   { bgColor: colors.Gray1950, label: "Moka Pot", rotation: 12, icon: MokaPotIcon, offset: 10 },
 ];
 
+// Steps for the enumerated circle progress bar
 const steps = [
   { state: 'answered' },
   { state: 'current' },

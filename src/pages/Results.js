@@ -8,6 +8,8 @@ import { NavButton } from '../components/Buttons';
 
 import colors from '../styles/styles';
 
+// Results Page
+
 const ResultsContainer = styled.div`
   display: flex;
   flex-direction: column;

@@ -5,6 +5,8 @@ import { ReactComponent as BaristaIcon } from "../assets/icons/pretty-much-a-bar
 import { ContinueButton } from "../components/Buttons";
 import colors from "../styles/styles";
 
+// Transition Page
+
 const TransitionContainer = styled.div`
   display: flex;
   flex-direction: column;

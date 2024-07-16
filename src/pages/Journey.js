@@ -1,5 +1,7 @@
 import React from "react";
 
+// Journey Page TBD
+
 const Journey = () => {
   return (
     <div>
